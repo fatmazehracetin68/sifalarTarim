@@ -1,5 +1,6 @@
 import theme from "@/styles/thema";
 import React from "react";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -13,13 +14,13 @@ const Header = () => {
       <div>
         <ul className="flex justify-around ">
           <li className="hover:scale-110">
-            <a>Anasayfa</a>
+            <Link href="/">Anasayfa</Link>
           </li>
           <li className="mx-5 hover:scale-110">
-            <a>Hakkımızda</a>
+            <Link href="/about">Hakkımızda</Link>
           </li>
           <li className="hover:scale-110">
-            <a>İletişim</a>
+            <Link href="/contact">İletişim</Link>
           </li>
         </ul>
       </div>
